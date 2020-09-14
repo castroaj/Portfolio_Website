@@ -1,0 +1,193 @@
+@model Web.Models.EducationModel  
+
+@{
+    ViewData["Title"] = "Education";
+    ViewBag.Title = "Education";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+</head>
+
+<div class="row">
+    <div class="card cardForm" style="width: 100%;">
+        <div class="container">
+            <div class="content">
+                <h1 style="font-weight: 800; margin: 20px; margin-left: 0px;">Alexander Castro's Education</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="card cardForm">
+        <div class="container">
+            <div class="content"> 
+                
+                <h2 class="cardTitle">
+                    James Madison University:<span style="font-weight: lighter; float: right;"><a href="~/pdf/Castro_Transcript.pdf" target="_blank" style="color: black; font-size: x-large;">View Unoffical Transcript</a></span>
+                </h2>
+                <br>
+
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'CS')"" id="defaultOpen">Computer Science</button>
+                    <button class="tablinks" onclick="openTab(event, 'CIS')">Computer Information Systems</button>
+                    <button class="tablinks" onclick="openTab(event, 'GEN')">General Education</button>
+                </div>
+            
+                <!-- Tab content -->
+                <div id="CS" class="tabcontent" style="margin-bottom: 20px;">
+                <ol type="I" style="font-size: large;">
+                    <li> 
+                        <h5><b>
+                            Degree Type:
+                        </b></h5>
+                        <em style="font-size: medium;">
+                            B.S. Computer Science
+                        </em>
+                    <br>
+                    <br>
+                    </li>
+                    <li>
+                        <h5><b>
+                            Cumulative GPA:
+                        </b></h5>
+                        <em style="font-size: medium;">
+                            3.271 (as of 3/8/2020)
+                        </em>
+                    <br>
+                    <br>
+                    </li>
+                    <li>
+                        <h5><b>Courses Taken: </b></h5>
+                        
+                        <table class="table table-responsive table-hover thead-dark fsizing" style="border: 1px solid black; margin-left: -60px;">  
+                            <tr>  
+                                <th>Course Num</th>  
+                                <th>Course Title</th>  
+                                <th>Letter Grade</th>
+                                <th>Credits</th>
+                                <th>Description</th>  
+                            </tr>  
+                            @*Iterating Employee ViewModel *@
+                            @foreach (var i in Model.csCourses)
+                            { 
+                                <tr>  
+                                    <td>@i.CourseNum</td>  
+                                    <td>@i.CourseTitle</td>  
+                                    <td>@i.LetterGrade</td>  
+                                    <td>@i.Credits</td>
+                                    <td>@i.Description</td>       
+                                </tr>  
+                            }  
+                        </table>
+                    </li>
+                </ol>
+                </div>
+
+                <div id="CIS" class="tabcontent">
+                    <ol type="I" style="font-size: large;">
+                    <li> 
+                        <h5><b>
+                            Degree Type:
+                        </b></h5>
+                        <em style="font-size: medium;">
+                            Minor in Computer Information Systems
+                        </em>
+                    <br>
+                    <br>
+                    </li>
+                    <li>
+                        <h5><b>
+                            Cumulative GPA:
+                        </b></h5>
+                        <em style="font-size: medium;">
+                            3.5 (as of 3/8/2020)
+                        </em>
+                    <br>
+                    <br>
+                    </li>
+                    <li>
+                        <h5><b>Courses Taken:</b></h5>
+                        <table class="table table-responsive table-hover thead-dark fsizing" style="border: 1px solid black; margin-left: -60px;">  
+                            <tr>  
+                                <th>Course Num</th>  
+                                <th>Course Title</th>  
+                                <th>Letter Grade</th>
+                                <th>Credits</th>
+                                <th>Description</th>  
+                            </tr>  
+                            @*Iterating Employee ViewModel *@
+                            @foreach (var i in Model.cisCourses)
+                            { 
+                                <tr>  
+                                    <td>@i.CourseNum</td>  
+                                    <td>@i.CourseTitle</td>  
+                                    <td>@i.LetterGrade</td>  
+                                    <td>@i.Credits</td>
+                                    <td>@i.Description</td>       
+                                </tr>  
+                            }  
+                        </table>
+                    </li>
+                </ol>
+                </div>
+
+                <div id="GEN" class="tabcontent">
+                    <ol type="I" style="font-size: large;">
+                        <li>
+                            <h5><b>
+                                Degree Type:
+                            </b></h5>
+                            <em style="font-size: medium;">
+                                General Education for B.S. in Computer Science
+                            </em>
+                        <br>
+                        <br>
+                        </li>
+                        <li>
+                            <h5><b>
+                                Cumulative GPA:
+                            </b></h5>
+                            <em style="font-size: medium;">
+                                3.5 (as of 3/8/2020)
+                            </em>
+                        <br>
+                        <br>
+                        </li>
+                        <li>
+                            <h5><b>Courses Taken:</b></h5>
+                            <table class="table table-responsive table-hover thead-dark fsizing" style="border: 1px solid black; margin-left: -60px;">  
+                                <tr>  
+                                    <th>Course Num</th>  
+                                    <th>Course Title</th>  
+                                    <th>Letter Grade</th>
+                                    <th>Credits</th>
+                                    <th>Description</th>  
+                                </tr>  
+                                @*Iterating Employee ViewModel *@
+                                @foreach (var i in Model.genEdCourses)
+                                { 
+                                    <tr>  
+                                        <td>@i.CourseNum</td>  
+                                        <td>@i.CourseTitle</td>  
+                                        <td>@i.LetterGrade</td>  
+                                        <td>@i.Credits</td>
+                                        <td>@i.Description</td>       
+                                    </tr>  
+                                }  
+                            </table>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/EducationIndex.js" asp-append-version="true"></script>
+
+

@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="~/css/site.css">
+        <link rel="stylesheet" type="text/css" href="~/css/home.css">
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="card cardForm" style="width: 100%;">
+                <div class="content">
+                    <h1 style="font-weight: 800; margin: 20px;">Alexander Castro's Portfolio Website</h1>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card-deck">
+            <div class="row">
+                <div class="card cardForm">
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Bio" asp-action="Index">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Biography</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="card-img-top img-fluid padimg" src="~/css/images/mainProfile.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about me as a person. I 
+                                    provide infomation about my hobbies, my schooling, and my goals
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card cardForm">  
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Education" asp-action="Index">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Education</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="card-img-top img-fluid float-right padimg" src="~/css/images/jmuLogo.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about my education. I 
+                                    provide transcript infomation for all of the courses I have taken at
+                                    JMU
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card cardForm">  
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Experience" asp-action="Index"> 
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Experience</h2>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-img-top img-fluid padimg" src="~/css/images/workLogo.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about my experience 
+                                    in the workplace. Including internships and jobs both inside and 
+                                    outside the IT field
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card cardForm">  
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Skill" asp-action="Index">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Skills</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="card-img-top img-fluid padimg" src="~/css/images/skillicon.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about my skills. Including 
+                                    programming languages, technologies, and topics in computer science
+                                    that I am familiar with
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card cardForm">
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Project" asp-action="Index">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Projects</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="card-img-top img-fluid float-right padimg" src="~/css/images/githubicon.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about some of the Projects
+                                    that I have created or participated in, Including school, work, and
+                                    personal projects
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card cardForm">
+                    <div class="content">
+                        <a style="color: black" asp-area="" asp-controller="Contact" asp-action="Index">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center cardTitleFS">Contact</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="card-img-top img-fluid float-right padimg" src="~/css/images/telephone.png">
+                                <p class="card-text">
+                                    Visit this page if you want to learn more about how to contact Alexander
+                                    Castro. You will find his Email, Phone, and a downloadable copy of his
+                                    resume
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>

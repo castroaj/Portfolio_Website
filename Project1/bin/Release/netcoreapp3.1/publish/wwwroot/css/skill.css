@@ -1,0 +1,67 @@
+.bartitle {
+    font-style: italic;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.skill-container {
+  width: 95%;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+  margin: 15px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+
+/* Languages */
+.java {width: 95%; background-color: rgb(190,0,0);}
+.sql {width: 90%; background-color: rgb(190,80,0);}
+.c {width: 80%; background-color: rgb(228, 137, 0);}
+.shellScript {width: 80%; background-color: rgb(228,137,0);}
+.html {width: 80%; background-color: rgb(228, 137, 0);}
+.js {width: 70%; background-color: rgb(210,210,0);}
+.golang {width: 70%; background-color: rgb(210, 210, 0);}
+.python {width: 65%; background-color: rgb(0, 210, 0);}
+.ruby {width: 60%; background-color:rgb(0, 210, 100);}
+.css {width: 60%; background-color: rgb(0, 210, 100);}
+.cs {width: 50%; background-color: rgb(0, 20, 200);}
+.haskell {width: 40%; background-color: rgb(100, 0, 250);}
+
+/* Tech */
+.linux {width: 95%; background-color: rgb(190,0,0);}
+.bash {width: 95%; background-color: rgb(190,0,0);}
+.vimTmux {width: 95%; background-color: rgb(190,0,0);}
+.kali {width: 90%; background-color: rgb(190,80,0);}
+.git {width: 90%; background-color: rgb(190,80,0);}
+.eclipse {width: 90%; background-color: rgb(190,80,0);}
+.vscode {width: 90%; background-color: rgb(190,80,0);}
+.sqlite {width: 80%; background-color: rgb(228,137,0);}
+.pgadmin {width: 80%; background-color: rgb(228,137,0);}
+.spring {width: 75%; background-color:  rgb(210,210,0);}
+.dotnet {width: 75%; background-color:  rgb(210,210,0);}
+.windows {width: 65%; background-color: rgb(0,210,0);}
+.json {width: 55%; background-color:  rgb(0,20,200);}
+
+/* Concepts */
+.scrum {width: 95%; background-color: rgb(190,0,0);}
+.infosec {width: 95%; background-color: rgb(190,0,0);}
+.crypto {width: 90%; background-color: rgb(190, 80, 0);}
+.versionControl {width: 80%; background-color: rgb(228,137,0);}
+.pentesting {width: 80%; background-color: rgb(228,137,0);}
+.networking {width: 80%; background-color: rgb(228,137,0);}
+.discrete {width: 80%; background-color: rgb(228,137,0);}
+.systems {width: 75%; background-color:  rgb(210,210,0);}
+.dataStructures {width: 75%; background-color:  rgb(210,210,0);}
+.database {width: 75%; background-color:  rgb(210,210,0);}
+.concurrency {width: 65%; background-color: rgb(0,210,0);}
+
+

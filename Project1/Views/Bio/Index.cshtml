@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Biography";
+}
+<html>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <body>
+        
+        <div class="row">
+            <div class="card cardForm" style="width: 100%;">
+                <div class="content">
+                        <h1 style="font-weight: 800; margin: 20px;">Alexander Castro's Biography</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck" style="margin-bottom: 70px;">
+            <div class="row">
+                <div class="card mb-3 cardForm">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center">About Me</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="text">
+                                    I am a 21 year-old future computer scientist from 
+                                    Chesterfield Virginia. I come from a big family
+                                    with five siblings. I have two full siblings, one 
+                                    half-brother, and two step-brothers.
+                                </p>
+                                <p class="text"> 
+                                    Some of my hobbies outside of computer science
+                                    include going to the gym, golf, and politics. I am also a huge music and movie 
+                                    lover.
+                                </p>
+                                <p class="text"> 
+                                        A couple of my hobbies inside of computer science would have to be pennetration testing
+                                    and cyber-security in general. I am a VIP member of the site hackTheBox.eu
+                                    which hosts numerous machines with various vulnerabilites.
+                                    <a href="https://www.hackthebox.eu/" target="_blank">Visit HackTheBox</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="~/css/images/mainProfile.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card mb-3 cardForm">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center">School and Extracurriculars</h2>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="cardSubtitle">High School:</h4>
+                                <p class="text">
+                                    I attended Manchester High School in Chestfield Virginia from 2014 to 2017. I 
+                                    was in several extracurricular activites including the National Honors Society, 
+                                    the track and field team, as well as the golf team.
+                                </p> 
+                                <h4 class="cardSubtitle">College:</h4>
+                                <p class="text"> 
+                                    I am currently attending James Madison University in pursuit of a B.S. in Computer
+                                    Science. I began my studies at JMU in 2017 and am on track to graduate in May of 2021.
+                                    Outside of class, I have been apart of both the Cyber Defense Club as well
+                                    as the competitive programming club. Visit Education page for more information about 
+                                    courses I have taken => <a asp-area="" asp-controller="Education" asp-action="Index">Go to Education Page</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="~/css/images/jmuLogo.png" style="margin-top: 45px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="card mb-3 cardForm" style="margin-bottom: 100px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-header">
+                                <h2 class="cardTitle text-center">My Goals</h2>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="cardSubtitle">Software Development</h4>
+                                <p class="text">
+                                After finishing college, my plan is to find a career as a software developer.
+                                I will have completed two internships as a web application developer, so web
+                                development seems like the most likely candidate for my first position out of school.
+                                </p> 
+                                <h4 class="cardSubtitle">Cyber Security Professional</h4>
+                                <p class="text"> 
+                                Beyond my first couple positions out of school, I want to transition to a more 
+                                cyber-security based role. My plan is to aquire a couple of necessary certifications
+                                such as the Security+, and/or the OSCP. This coupled with the security background 
+                                I will have from school will hopefully aid me into getting a job as a penetration tester.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid " src="~/css/images/penTester.png">
+                            <img class="img-fluid " src="~/css/images/software_dev.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>

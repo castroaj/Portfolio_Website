@@ -1,0 +1,217 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*
+  Tab CSS
+*/
+
+ /* Style the tab */
+ .tab {
+  overflow: hidden;
+  border: 3px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 0.75s;
+  background: white;
+} 
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+ /* Style the header: fixed position (always stay at the top) */
+ .header-progress {
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  width: 77%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 6px;
+  background: rgb(100,100, 100);
+  width: 0%;
+} 
+
+.column {
+  width: 50%;
+  margin-bottom: 32px;
+  padding: 0 8px;
+  }
+  .card {
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  }
+
+  p.text {
+    margin: 15px;
+    font-style: italic;
+    font-size: medium;
+}
+
+  h2.cardTitle {
+    font-weight: 650; 
+    margin: 20px;
+    margin-left: 5px;
+  }
+
+  h5.cardSubtitle {
+    margin-left: 5px;
+    font-style: italic;
+  }
+
+  .container {
+  padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+  img.ImgLeft {
+    width: 300px;
+    height: 350px;
+    float: left;
+    padding: 35px;
+    margin: -15px;
+    margin-bottom: 30px;
+    border: 1.00em;
+    border-color: black;
+}
+
+img.ImgRight {
+    width: 300px;
+    height: 350px;
+    float: right;
+    padding: 35px;
+    margin: -10px;
+    margin-bottom: 15px;
+    border: 1.00em;
+    border-color: black;
+}
+
+img.Wide {
+    width: 400px;
+    margin: -10px;
+
+}
+
+img.SmallWide {
+    width: 350px;
+    height: 300px;
+}
